@@ -1,0 +1,355 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Aryan Taneja} % Your Name
+\newcommand{\course}{Computer Science} % Your Course
+\newcommand{\phone}{8572863836} % Your Phone Number
+\newcommand{\emaila}{aryan1359.be20@email.com} %Email 1
+\newcommand{\emailb}{tanejaaryan85@gmail.com} %Email 2
+\newcommand{\github}{tanejaaryan99} %Github
+% \newcommand{\website}{https://example.com/} %Website
+\newcommand{\linkedin}{aryan-taneja-1689a21aa} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+\includegraphics[width=2cm,clip]{myself.jpeg}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone\\
+  {Roll No.:\roll} & \href{mailto:\emaila}{\emaila} \\
+  \course &  \href{mailto:\emailb}{\emailb}\\
+  {Bachelor of Engineering} &  \href{https://github.com/\github}{Github}\\
+  {Chitkara University, Rajpura Punjab} & \href{https://www.linkedin.com/in/\linkedin/}{LinkedIn}
+\end{tabularx}
+}
+
+%-----------------------------Intro----------
+\section{Profile}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+% \resumePOR{} % Award
+    {I am a final-year computer science student at Chitkara University with a passion for software development and full-stack applications. As a programmer, I excel at solving complex programming problems using languages such as C, C++, and Java. With a track record of successfully debugging codes and solving programming problems on platforms such as Leetcode, Codechef, Hackerrank, and GFG, I have developed a knack for adapting to new programming languages quickly and creating optimized solutions.
+
+ Currently, I am working as an Intern at MAQ Software in Hyderabad, where I hold the position of Associate Software Engineer since August 2023. In this role, I have developed and maintained React projects, demonstrating proficiency in front-end technologies such as HTML, CSS, JavaScript, React, and TypeScript.} % Event
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+
+%-----------EDUCATION-----------------
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Indian Institute of Technology Guwahati}{Guwahati, India}
+%       {Bachelor of Technology in Mathematics and Computing ;  GPA: 8.10}{July. 2015 -- July. 2019 (Expected)}
+%     \resumeSubheading
+%       {Burdwan Model School}{Burdwan, W.B}
+%       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
+  % \resumeSubHeadingListEnd\vspace{-3mm}
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1https://www.overleaf.com/project/61fc166d7eab8975b2ab74d0
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  % \vspace{3mm}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.E. (CSE) & Chitkara University, Punjab & 9.71 (Current) & 2020-Present\\
+  \hline
+  Senior Secondary & CBSE Board & 82\% & 2020 \\
+  \hline
+  Secondary & CBSE Board & 87\% & 2018 \\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MAQ Software}{Hyderabad}
+      {Associate Software Engineer}{Aug 2023 - Present}
+      \resumeItemListStart
+    \item {Developed and maintained React projects, demonstrating proficiency in front-end technologies such as HTML, CSS, JS, React and TypeScript.}
+    \item {
+    Successfully integrated and leveraged C-Sharp skills acquired through a company-sponsored bootcamp, contributing to the overall tech stack.}
+    \item {
+    Engaged in continuous learning and professional development to stay abreast of industry trends and emerging technologies.}
+    \resumeItemListEnd
+    
+  %   \resumeSubheading
+  %     {Thinking Stack Inc.}{Bengaluru, India}
+  %     {Full Stack Developer Intern}{Dec. 2018 - Jan. 2019}
+  %     \resumeItemListStart
+  %   \item {Developed web app using ReactJS and deployed the app to AWS EC2 using Docker.}
+  %       \item {Made website mobile-friendly and increased Google web dev score by 50 points.}
+  %   \resumeItemListEnd
+      
+  % \resumeSubHeadingListEnd
+
+  
+\vspace{-5.5mm}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Weather App} %Project Name
+      {The Live Search Weather App enables users to search real-time weather for any location worldwide } %Project Name, Location Name
+      {Jul. 2023} %Event Dates
+      {\href{https://weatherapp-byaryantaneja.netlify.app/}{Live Url} 
+          |  {\href{https://github.com/tanejaaryan99/Weather-app.git}{Github}} } %Website
+    
+    \resumeProject
+      {Netflix Clone } %Project Name
+      {Created a front page of Netflix web-app using HTML, CSS, JS } %Project Name, Location Name
+      {Jul. 2023} %Event Dates
+      {\href{https://netflixclone-byat.netlify.app/}{Live Url} 
+          |  {\href{https://github.com/tanejaaryan99/Netflix-Clone}{Github}} } %Website
+
+    
+    \resumeProject
+      {Snake Game} %Project Name
+      {The snake game is developed as a proof of concept using front-end technologies like HTML, CSS, JavaScript, and canvas.} %Project Name, Location Name
+      {Apr. 2023} %Event Dates
+      % {\href{https://netflixclone-byat.netlify.app/}{Live Url} 
+          {\href{https://github.com/tanejaaryan99/SnakeGame}{Github}}  %Website
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+\section{Key Courses Taken}
+ \resumeHeadingSkillStart
+  \resumeSubItem{} % Category
+    {Data Structure, Algorithms, DBMS, Operating System, OOPS}
+%  \resumeSubItem{Operating Systems}
+%  {Windows, Linux*} 
+% \hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
+ \resumeHeadingSkillEnd
+
+\section{Technical Skills}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming: } % Category
+    { C/C++,Core Java}
+ \resumeSubItem{Tools \& OS: } % Category
+    {Git /Github, Jupyter Notebook,Google cloud, Linux, Windows, Mac } % Skills
+ \resumeSubItem{Libraries/Frameworks: } % Category
+    {JQuery}
+    
+     \resumeSubItem{Web Skills: } % Category
+    {HTML/CSS/JS, ReactJS/NextJS, Bootstrap , Javascript}
+%  \resumeSubItem{Operating Systems}
+%  {Windows, Linux*} 
+% \hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
+ \resumeHeadingSkillEnd
+
+
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Growth Manager, } % Position
+    {Training \& Marketing, PrepInsta} %Club,Event
+    {Present} %Tenure Period
+% \resumePOR{General Secretary,} % Position
+%     {Nexus Coding Club, IEM Kolkata} %Club,Event
+%     {Apr. 2018 - Apr. 2019} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+\section{Achievements}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Secured 8th Position } % Award
+    {Coding hackathon organized by Coding Ninjas. } % Event
+    {2021} %Event Year
+    
+\resumePOR{Google Cloud } % Award
+    {Completed 30 days of google cloud organized by
+    
+    Google developer student club \\ \& Google} % Event
+    {2022} %Event Year
+    
+    \resumePOR{Leetcode } % Award
+    {Completed 120+ questions On leetcode} % Event
+    {Till now} %Event Year
+
+    \resumePOR{codechef  } % Award
+    {Solved 150+ ques on codechef} % Event
+    {Till now} %Event Year
+
+    % \resumePOR{Web Development coding ninjas } % Award
+    % {Completed a certified course on Coding Ninjas} % Event
+    % {2021} %Event Year
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+\section{Certifications}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{}{
+Data Analysis And Algorithms coding ninjas
+}{}
+
+\resumePOR{}{
+Object Oriented Programming (Oops) coding ninjas
+}{}
+\resumePOR{}{
+Web Development coding ninjas
+}{}
+\resumeSubHeadingListEnd
+
+\section{Hobbies}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{}{
+Cricket
+}{}
+
+\resumePOR{}{
+Book Reading
+}{}
+\resumeSubHeadingListEnd
+
+
+
+\hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+
+%-------------------------------------------
+\end{document}
