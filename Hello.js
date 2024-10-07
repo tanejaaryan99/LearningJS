@@ -101,3 +101,10 @@ String(undefined);  // "undefined"
 // Summary:
 // Use String() when you want a more general and safer string conversion, especially when dealing with null or undefined.
 // Use toString() when you're sure the value is not null or undefined, and you want to explicitly call the method on an object or primitive.
+
+
+// .length function is used to determine the length of a string
+var txt = "Heeeeeeeeelooo";
+console.log(txt.length);
+
+
