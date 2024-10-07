@@ -157,3 +157,30 @@ console.log(newName); // Chefaf
 
 
 
+// String slicing
+
+// String slicing in JavaScript involves extracting a portion of a string by specifying the starting and ending indices.
+
+// You can achieve this using the slice() method. Here are a few examples:
+
+// slice() method:
+var originalString = "Hello, World!";
+var slicedString = originalString.slice(7, 12);
+console.log(slicedString);
+
+// Omitting the End Index:
+// If you omit the end index, the slice will go until the end of the string:
+
+originalString = "Hello, World!";
+slicedString = originalString.slice(7);
+console.log(slicedString);
+
+// In this case, it extracts from index 7 to the end of the string.
+
+// Negative Indices:
+// You can use negative indices to count from the end of the string:
+
+originalString = "Hello, World!";
+slicedString = originalString.slice(-6, -1);
+console.log(slicedString);
+// This extracts from the 6th character from the end to the 1st character from the end.
