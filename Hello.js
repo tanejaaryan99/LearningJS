@@ -184,3 +184,5 @@ originalString = "Hello, World!";
 slicedString = originalString.slice(-6, -1);
 console.log(slicedString);
 // This extracts from the 6th character from the end to the 1st character from the end.
+
+
