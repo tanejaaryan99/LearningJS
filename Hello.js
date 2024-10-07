@@ -107,4 +107,31 @@ String(undefined);  // "undefined"
 var txt = "Heeeeeeeeelooo";
 console.log(txt.length);
 
+var number = 10;
+console.log(number.length) //we cannot determine the length of a integer.
+
+
+// INDEXING in Strings
+
+// We use the concept of indexing which means every character in a string corresponds to a number called the index number
+
+//                0 1 2 3 4 5 6 7  - index number
+//      for eg - "C o d e C h e f"
+// Following are some of the ways we can access a specific character in a string in javascript:
+
+// using square brackets notation [ ]
+// When we try to access a character whose index is equal to or larger than the string length, the square brackets [] return undefined.
+
+// using charAt() method This method will return the character at a specified index in a string. The method takes in a parameter, an integer that represents the index of the character to be returned. The syntax for usage is string.charAt(index).
+
+// Note:
+// Indexing always starts from 0 when going left to right.
+// So the first character of a string str is s[0] , the second is s[1] , and so on.
+
+var str = "Hello";
+console.log(str[1]);
+console.log(str[999]);
+console.log(str.charAt(100));
+
+
 
