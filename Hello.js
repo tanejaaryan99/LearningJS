@@ -275,7 +275,24 @@ console.log(globalVar); // Output: I'm global!
 // Global variables: Known and accessible throughout the entire code, both inside and outside functions.
 // Understanding local and global scope is essential for writing clean and efficient code. It helps you keep things organized and prevents unintended interactions between different parts of your code.
 
+// Calling a function within function
+// Functions can also call other functions.
 
+// Function to calculate the square of a number
+function square(num){
+    return num * num;
+}
+function squareAndDouble(num){
+    // Call the square function to calculate square
+    var squared = square(num);
+
+    // Double the squared result
+    return 2 * squared;
+}
+// Call the squareAndDouble function with the argument 3
+result = squareAndDouble(3);
+
+console.log("Result:", result);    // Output will be 'Result: 18'
 
 
 
