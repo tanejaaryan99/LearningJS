@@ -206,6 +206,7 @@ function greet(name) {
 }
 
 greet("Aryan");
+greet("Ishita");
 // function: This is the keyword used to declare a function in JavaScript. It tells the interpreter that you are defining a new function.
 
 // greet: This is the name of the function. You can choose any valid identifier as the function name. The name is used to call the function later in your code.
