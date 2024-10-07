@@ -217,3 +217,65 @@ greet("Ishita");
 
 // console.log("Hello, " + name + "!");
 //: This is the body of the function, where the actual code to be executed is written. In this example, the function uses console.log() to print a greeting message to the console, incorporating the value of the name parameter.
+
+// Parameters, Arguments
+// Note that there is a difference between Parameters and Arguments of a function.
+
+// Parameters are the variables that are listed as part of the method definition. They act like placeholders for the values that the method can accept.
+
+// Arguments are the actual values which are passed to the method when you call it.
+
+// Check the code template below
+
+// a, b are Parameters inside the function
+// A, B are Arguments passed to the function
+function addNumbers(a, b){
+    return a + b;
+}
+// Calling the function with arguments
+var A = 5;
+var B = 3;
+var result = addNumbers(A, B);
+console.log("Sum:", result);
+// Note: We can also use the same variable names for both the parameter and the argument.
+
+
+
+// Variable scope
+// local and global scope in the context of JavaScript functions:
+
+// Local Scope:
+// Local scope refers to variables that are declared inside a function. These variables are only accessible within that specific function. They are like secret ingredients that can only be used inside the kitchen (function).
+
+function myFunction() {
+    var localVar = "I'm local!";
+    console.log(localVar);
+}
+
+myFunction(); // Output: I'm local!
+console.log(localVar); // Error: localVar is not defined
+// In this example, localVar is a local variable. It can be used inside the myFunction kitchen, but if you try to access it outside, you'll get an error.
+
+// Global Scope:
+// Global scope, on the other hand, refers to variables that are declared outside of any function. These variables can be accessed from anywhere in your entire code, like ingredients available in the entire house.
+
+var globalVar = "I'm global!";
+
+function anotherFunction() {
+    console.log(globalVar);
+}
+
+anotherFunction(); // Output: I'm global!
+console.log(globalVar); // Output: I'm global!
+
+// Here, globalVar is a global variable. It can be used inside any function or even outside functions. It's like an ingredient you can use in any part of your house (code).
+
+// Local vs Global:
+// Local variables: Known and accessible only inside the function where they are declared.
+// Global variables: Known and accessible throughout the entire code, both inside and outside functions.
+// Understanding local and global scope is essential for writing clean and efficient code. It helps you keep things organized and prevents unintended interactions between different parts of your code.
+
+
+
+
+
