@@ -23,8 +23,8 @@ console.log(age); // Output: 25
 
 // Using let (block-scoped):
 // The let keyword declares a block-scoped variable, which means it is only accessible within the block or statement where it is defined.
-let name = "John";
-console.log(name); // Output: John
+let names = "John";
+console.log(names); // Output: John
 
 
 // Using const (block-scoped, constant):
@@ -132,6 +132,28 @@ var str = "Hello";
 console.log(str[1]);
 console.log(str[999]);
 console.log(str.charAt(100));
+
+
+
+// Changing Characters in a String
+// In JavaScript, strings are immutable, which means you cannot directly update or change a character in a string. For example
+
+var name = "Chaf";
+name[2] = 'e'; // nothing changes.
+console.log(name); // Chaf
+
+// If you run the above program, you will still get the same string Chaf.
+// However, you can create a new string with the desired changes.
+// Here's an example of how you can replace the character
+
+var name = "Chaf"
+var newName = name.replace('a', 'e');
+console.log(newName); // Chef
+
+// Note: If there are multiple occurrences of the substring you're trying to replace within the original string, the replace() method in JavaScript by default only replaces the first occurrence of the substring. For eg:
+var name = "Chafaf";
+var newName = name.replace('a', 'e');
+console.log(newName); // Chefaf
 
 
 
